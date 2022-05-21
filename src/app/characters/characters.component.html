@@ -1,0 +1,7 @@
+<div class="container-cards container-base">
+  <app-card
+    *ngFor="let character of !search ? characters.results : filteredCharacters.results"
+    [item]="character"
+    (click)="openDetailCharacter(character)"
+  ></app-card>
+</div>

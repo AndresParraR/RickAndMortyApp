@@ -1,0 +1,7 @@
+<div class="container-cards container-base">
+  <app-card
+    *ngFor="let episode of !search ? episodes.results : filteredEpisodes.results"
+    [item]="episode"
+    (click)="openDetailEpisode(episode)"
+  ></app-card>
+</div>

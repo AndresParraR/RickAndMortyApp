@@ -1,0 +1,7 @@
+<div class="container-cards container-base">
+  <app-card
+    *ngFor="let location of !search ? locations.results : filteredLocations.results"
+    [item]="location"
+    (click)="openDetailLocation(location)"
+  ></app-card>
+</div>
