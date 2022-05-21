@@ -1,6 +1,7 @@
 # RickAndMortyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This project was made with the objective of seeing the list and detail of each of the characters, locations and episodes of the API https://rickandmortyapi.com/
 
 ## Development server
 
