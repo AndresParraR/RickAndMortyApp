@@ -10,38 +10,6 @@ import { initialState, CharacterState, Character } from './characters.state';
 
 const _charactersReducer = createReducer(
   initialState,
-  // on(loadCharacters, (state, { characters }) => {
-  //   return {
-  //     ...state,
-  //     characters,
-  //   };
-  // }),
-  // on(addUsers, (state, {character}) => {
-  //   return {
-  //     ...state,
-  //     users: [character, ...state.characters]
-  //   }
-  // }),
-  // on(editUsers, (state, {user}) => {
-  //   console.log(state.users, user)
-  //   const users = state.users.map(function(el) {
-  //     if(el.id == user.id){return user}
-  //     return el
-  //   })
-  //   console.log(users)
-  //   return {
-  //     ...state,
-  //     users
-  //   }
-  // }),
-  // on(deleteUsers, (state, {userId}) => {
-  //   console.log(state, userId)
-  //   const users = state.users.filter(x => x.id != userId)
-  //   return {
-  //     ...state,
-  //     users
-  //   }
-  // }),
   on(loadCharactersSuccess, (state, { characters }) => {
     return {
       ...state,
